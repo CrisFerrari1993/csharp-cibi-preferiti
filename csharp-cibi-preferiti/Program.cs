@@ -14,7 +14,7 @@ namespace csharp_cibi_preferiti
             Array.Sort(favouriteFoods);
             for(int i = 0; i < favouriteFoods.Length; i++)
             {
-                Console.WriteLine($"Posizione in classifica {i} : {favouriteFoods[i]}");
+                Console.WriteLine($"Numero {i} : {favouriteFoods[i]}");
             }
             //- Il vostro cibo top (prima posizione della classifica)
             Console.WriteLine(favouriteFoods.First());
@@ -26,9 +26,10 @@ namespace csharp_cibi_preferiti
             int startIndex = (favouriteFoods.Length - 3) / 3;
 
             // stampo gli elementi a schermo
-            for(int i = startIndex; i < startIndex + 2; i++) {
+            for (int i = startIndex; i < startIndex + 2; i++)
+            {
                 Console.WriteLine(favouriteFoods[i]);
-           }
+            }
         }
     }
 }
