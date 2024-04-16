@@ -25,10 +25,10 @@ namespace csharp_cibi_preferiti
             //Stampate a video anche il cibo di mezza classifica, cioè che si trova nella posizione mediana.Attenzione: gestire anche il caso se aveste una classifica con un numero di elementi pari. In questo caso vanno stampati i 2 elementi in centro alla vostra classifica.
 
             // variabile che prende l'indice degli elementi nella metà
-            int startIndex = (favouriteFoods.Length - 3) / 3;
+            int startIndex = favouriteFoods.Length / 2;
 
             // stampo gli elementi a meta classifica a schermo
-            for (int i = startIndex; i < startIndex + 2; i++)
+            for (int i = startIndex - 1; i < startIndex + 1; i++)
             {
                 Console.WriteLine($"Elemento a metà classifica: {favouriteFoods[i]}");
             }
