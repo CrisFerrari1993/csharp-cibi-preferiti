@@ -24,14 +24,14 @@ namespace csharp_cibi_preferiti
             //BONUS
             //Stampate a video anche il cibo di mezza classifica, cioè che si trova nella posizione mediana.Attenzione: gestire anche il caso se aveste una classifica con un numero di elementi pari. In questo caso vanno stampati i 2 elementi in centro alla vostra classifica.
 
-            if (favouriteFoods.Length % 2 == 1)
+            if (mYfavouriteFoods.Length % 2 == 1)
             {
-                Console.WriteLine($"Cibo in posizione mediana {favouriteFoods[favouriteFoods.Length / 2]}");
+                Console.WriteLine($"Cibo in posizione mediana {mYfavouriteFoods[mYfavouriteFoods.Length / 2]}");
             }
             else
             {
-                Console.WriteLine($"Cibo in posizione mediana 1 {favouriteFoods[(favouriteFoods.Length / 2) - 1]}");
-                Console.WriteLine($"Cibo in posizione mediana 2 {favouriteFoods[favouriteFoods.Length / 2]}");
+                Console.WriteLine($"Cibo in posizione mediana 1 {mYfavouriteFoods[(mYfavouriteFoods.Length / 2) - 1]}");
+                Console.WriteLine($"Cibo in posizione mediana 2 {mYfavouriteFoods[mYfavouriteFoods.Length / 2]}");
 
             }
             
