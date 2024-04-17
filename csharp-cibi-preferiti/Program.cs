@@ -11,10 +11,10 @@ namespace csharp_cibi_preferiti
             //- La lunghezza della classifica
             Console.WriteLine($"L'array è lungo {favouriteFoods.Length}");
             //-La vostra classifica(dunque stampare l’intero array in ordine indicando la posizione in classifica)
-            Array.Sort(favouriteFoods);
-            for (int i = 0; i < favouriteFoods.Length; i++)
+            string[] mYfavouriteFoods = { "pizza", "sushi", "paella", "pizzoccheri", "pasta al ragù", "cheesecake" };
+            for (int i = 0; i < mYfavouriteFoods.Length; i++)
             {
-                Console.WriteLine($"Numero {i + 1} : {favouriteFoods[i]}");
+                Console.WriteLine($"Numero {i + 1} : {mYfavouriteFoods[i]}");
             }
             //- Il vostro cibo top (prima posizione della classifica)
             Console.WriteLine($"Il mio piatto prefertito è {favouriteFoods.First()}");
@@ -34,6 +34,7 @@ namespace csharp_cibi_preferiti
                 Console.WriteLine($"Cibo in posizione mediana 2 {favouriteFoods[favouriteFoods.Length / 2]}");
 
             }
+            
 
         }
     }
