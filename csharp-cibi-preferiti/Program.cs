@@ -12,7 +12,7 @@ namespace csharp_cibi_preferiti
             Console.WriteLine($"L'array è lungo {favouriteFoods.Length}");
             //-La vostra classifica(dunque stampare l’intero array in ordine indicando la posizione in classifica)
             Array.Sort(favouriteFoods);
-            for(int i = 0; i < favouriteFoods.Length; i++)
+            for (int i = 0; i < favouriteFoods.Length; i++)
             {
                 Console.WriteLine($"Numero {i + 1} : {favouriteFoods[i]}");
             }
@@ -24,14 +24,17 @@ namespace csharp_cibi_preferiti
             //BONUS
             //Stampate a video anche il cibo di mezza classifica, cioè che si trova nella posizione mediana.Attenzione: gestire anche il caso se aveste una classifica con un numero di elementi pari. In questo caso vanno stampati i 2 elementi in centro alla vostra classifica.
 
-            // variabile che prende l'indice degli elementi nella metà
-            int startIndex = favouriteFoods.Length / 2;
-
-            // stampo gli elementi a meta classifica a schermo
-            for (int i = startIndex - 1; i < startIndex + 1; i++)
+            if (favouriteFoods.Length % 2 == 1)
             {
-                Console.WriteLine($"Elemento a metà classifica: {favouriteFoods[i]}");
+                Console.WriteLine($"Cibo in posizione mediana {favouriteFoods[favouriteFoods.Length / 2]}");
             }
+            else
+            {
+                Console.WriteLine($"Cibo in posizione mediana 1 {favouriteFoods[(favouriteFoods.Length / 2) - 1]}");
+                Console.WriteLine($"Cibo in posizione mediana 2 {favouriteFoods[favouriteFoods.Length / 2]}");
+
+            }
+
         }
     }
 }
